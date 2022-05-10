@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>TestNG:  Sanity</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sanity</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 09 13:14:03 BST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>18 seconds (18367 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>sanity </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='uk.co.library.testsuite.JobSearchTest.verifyJobSearchResultUsingDifferentDataSet()'><b>verifyJobSearchResultUsingDifferentDataSet</b><br>Test class: uk.co.library.testsuite.JobSearchTest<br>Parameters: Software Tester, London, up to 50 miles, 45000, 70000, Per month, Any, Software Tester jobs in London<br/>
+<a href="#Output-1726519676" onClick='toggleBox("Output-1726519676", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1726519676" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1726519676">
+Enter jobtitle Software Tester to jobtitle field [[ChromeDriver: chrome on WINDOWS (b6df23219d9a9602d49143c373c01234)] -> xpath: //input[@id='keywords']]<br><br/>
+Enter location London to location field [[ChromeDriver: chrome on WINDOWS (b6df23219d9a9602d49143c373c01234)] -> xpath: //input[@id='location']]<br><br/>
+Select distance up to 50 miles from distsance dropdown [[ChromeDriver: chrome on WINDOWS (b6df23219d9a9602d49143c373c01234)] -> xpath: //select[@id='distance']]<br><br/>
+Click on more search option [[ChromeDriver: chrome on WINDOWS (b6df23219d9a9602d49143c373c01234)] -> xpath: //button[@id='toggle-hp-search']]<br><br/>
+Enter min Salary 45000 to minimum salary field [[ChromeDriver: chrome on WINDOWS (b6df23219d9a9602d49143c373c01234)] -> xpath: //input[@id='salarymin']]<br><br/>
+Enter max Salary 70000 to maximum salary field [[ChromeDriver: chrome on WINDOWS (b6df23219d9a9602d49143c373c01234)] -> xpath: //input[@id='salarymax']]<br><br/>
+Select Salary Type Per month from salary type dropdown [[ChromeDriver: chrome on WINDOWS (b6df23219d9a9602d49143c373c01234)] -> xpath: //select[@id='salarytype']]<br><br/>
+Select Job Type Any from job type dropdown [[ChromeDriver: chrome on WINDOWS (b6df23219d9a9602d49143c373c01234)] -> xpath: //select[@id='tempperm']]<br><br/>
+Click on FindJob button[[ChromeDriver: chrome on WINDOWS (b6df23219d9a9602d49143c373c01234)] -> xpath: //input[@id='hp-search-btn']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>uk.co.library.testsuite.JobSearchTest@78ac1102</td></tr>
+<tr>
+<td title='uk.co.library.testsuite.JobSearchTest.verifyJobSearchResultUsingDifferentDataSet()'><b>verifyJobSearchResultUsingDifferentDataSet</b><br>Test class: uk.co.library.testsuite.JobSearchTest<br>Parameters: Tester, Harrow, up to 5 miles, 30000, 500000, Per annum, Permanent, Permanent Tester jobs in Harrow on the Hill<br/>
+<a href="#Output-183304529" onClick='toggleBox("Output-183304529", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-183304529" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-183304529">
+Enter jobtitle Tester to jobtitle field [[ChromeDriver: chrome on WINDOWS (51c4da3abb8fcdf27e838e0a5d3c4b33)] -> xpath: //input[@id='keywords']]<br><br/>
+Enter location Harrow to location field [[ChromeDriver: chrome on WINDOWS (51c4da3abb8fcdf27e838e0a5d3c4b33)] -> xpath: //input[@id='location']]<br><br/>
+Select distance up to 5 miles from distsance dropdown [[ChromeDriver: chrome on WINDOWS (51c4da3abb8fcdf27e838e0a5d3c4b33)] -> xpath: //select[@id='distance']]<br><br/>
+Click on more search option [[ChromeDriver: chrome on WINDOWS (51c4da3abb8fcdf27e838e0a5d3c4b33)] -> xpath: //button[@id='toggle-hp-search']]<br><br/>
+Enter min Salary 30000 to minimum salary field [[ChromeDriver: chrome on WINDOWS (51c4da3abb8fcdf27e838e0a5d3c4b33)] -> xpath: //input[@id='salarymin']]<br><br/>
+Enter max Salary 500000 to maximum salary field [[ChromeDriver: chrome on WINDOWS (51c4da3abb8fcdf27e838e0a5d3c4b33)] -> xpath: //input[@id='salarymax']]<br><br/>
+Select Salary Type Per annum from salary type dropdown [[ChromeDriver: chrome on WINDOWS (51c4da3abb8fcdf27e838e0a5d3c4b33)] -> xpath: //select[@id='salarytype']]<br><br/>
+Select Job Type Permanent from job type dropdown [[ChromeDriver: chrome on WINDOWS (51c4da3abb8fcdf27e838e0a5d3c4b33)] -> xpath: //select[@id='tempperm']]<br><br/>
+Click on FindJob button[[ChromeDriver: chrome on WINDOWS (51c4da3abb8fcdf27e838e0a5d3c4b33)] -> xpath: //input[@id='hp-search-btn']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>uk.co.library.testsuite.JobSearchTest@78ac1102</td></tr>
+</table><p>
+</body>
+</html>
